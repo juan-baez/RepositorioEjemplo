@@ -11,5 +11,10 @@ namespace AppEjemplo
         static void Main(string[] args)
         {
         }
+
+        private static int Sumar(int x, int y)
+        {
+            return x + y;
+        }
     }
 }
