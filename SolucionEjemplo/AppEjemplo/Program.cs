@@ -19,7 +19,12 @@ namespace AppEjemplo
                 Password = "1234"
             };
 
-            Console.WriteLine("¡Hola {0}! Su contraseña es: {1}", usuario.Username, usuario.Password);
+            Console.WriteLine("¡Hola {0}! Su contraseña es: {1}", usuario.Username, usuario.GetEncryptedPassword());
+
+            int total = Sumar(5, 3);
+
+            Console.WriteLine("Operación matemática: 5 + 3 = {0}", total);
+
             Console.WriteLine("Presione cualquier tecla para finalizar la aplicación...");
 
             Console.Read();
