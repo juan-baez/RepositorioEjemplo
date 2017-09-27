@@ -21,10 +21,14 @@ namespace AppEjemplo
 
             Console.WriteLine("¡Hola {0}! Su contraseña es: {1}", usuario.Username, usuario.GetEncryptedPassword());
 
-            int total = Sumar(5, 3);
+            Random random = new Random();
+            int x = random.Next(1, 100);
+            int y = random.Next(1, 100);
 
-            Console.WriteLine("Operación matemática: 5 + 3 = {0}", total);
+            int total = Sumar(x, y);
 
+            Console.WriteLine("Operación matemática: {0} + {1} = {2}", x, y, total);
+            
             Console.WriteLine("Presione cualquier tecla para finalizar la aplicación...");
 
             Console.Read();
